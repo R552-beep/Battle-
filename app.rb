@@ -1,10 +1,9 @@
 require 'sinatra'
-# require "sinatra/reloader" if development?
+require "sinatra/reloader" if development?
 
 get '/' do
-    'ha ha ha!'
-end   
-
-get '/' do
-    'hello'
-end
+  "hello"      
+ end  
+ get '/secret' do
+  "hello again"
+ end

@@ -8,6 +8,6 @@ group :development, :test do
     gem "rspec"
     gem "sinatra"
     gem "webrick"
-    # gem 'sinatra/reloader'
+    gem 'sinatra-contrib'
 end
 

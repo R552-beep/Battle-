@@ -14,10 +14,13 @@ get '/' do
   erb(:index)
  end
 
- get '/named_cat' do
+ post '/named_cat' do
   p params
   @my_name = params[:name]
   erb(:index)
  end
 
+ get '/form' do
+  erb(:form)
+ end
  

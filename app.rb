@@ -9,8 +9,14 @@ get '/' do
   "hello again"
  end
 
- get '/cat' do
+ get '/random_cat' do
   erb(@my_name = ["Amigo", "Misty", "Almond"].sample )
+  erb(:index)
+ end
+
+ get '/named_cat' do
+  p params
+  @my_name = params[:name]
   erb(:index)
  end
 
